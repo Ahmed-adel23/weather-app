@@ -11,14 +11,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    background-repeat: no-repeat;
     max-height: 100vh;
   }
   .weather-img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
