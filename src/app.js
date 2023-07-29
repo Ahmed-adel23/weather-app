@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 app.get('/checkWeather', (req, res) => {
     // to get country from input home 
     const country = req.query.country;
-    const url = `https://api.weatherapi.com/v1/current.json?key=20dcdfd32d2c49d3aea123021232807&q=${country}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=1231891180c745219d283531232907&q=${country}&aqi=no`;
   
     request({url , json: true} , (error,  response) => {
       if (error) {
