@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div >
+      <img class="weather-img" src="./images/home.jpg" alt="weather">
+    </div>
+    {{>navbar}}
+    <div class="weather-info animate__animated  animate__backInDown">
+    <h1 class="animate__animated animate__fadeInLeftBig animate__delay-1s">Welcome to my weather app!</h1>
+    <form action="/checkWeather" method="get" class="animate__animated animate__fadeInRightBig animate__delay-1s">
+      <input placeholder="Enter your country" type="text" id="country" name="country" required>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div>
+    <img class="weather-img" alt="weather">
+  </div>
+
+  {{>navbar}}
+  <div class="weather-info animate__animated  animate__backInDown">
+    <h1 class="animate__animated animate__fadeInLeftBig animate__delay-1s">Weather in {{country}}</h1>
+    <div class="wee animate__animated animate__fadeInLeftBig animate__delay-1s">
+    <img class="icon"  alt="" width="150px" height="150px">
+    <p class="temp"> {{temperature}} °C</p>
+    </div>
+    <p class="current-weather animate__animated animate__fadeInUp animate__delay-1s">{{weather}}</p>
+    <p  class="animate__animated animate__fadeInUp animate__delay-1s">Latitude: {{latitude}}</p>
+    <p class="animate__animated animate__fadeInUp animate__delay-1s">Longitude: {{longitude}}</p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+{{!-- src="https://upload.wikimedia.org/wikipedia/commons/0/08/Weather_icon_-_sunny.svg" --}}
